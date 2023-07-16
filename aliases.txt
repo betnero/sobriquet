@@ -1,0 +1,103 @@
+#DIRECTORY NAVIGATION
+alias ..='cd ..;pwd'								#go up one directory levels and print directory name
+alias ...='cd ../..;pwd'							#go up two directory levels and print directory name
+alias ....='cd ../../..;pwd'							#go up three directory levels and print directory name
+alias cdh='cd ~'								#go to home directory
+alias cdr='cd /'								#go to root directory
+
+#TERMINAL OPERATIONS
+alias c='clear'									#clear terminal
+alias chist='cat /dev/null > ~/.bash_history && history -c'			#clear all terminal history
+alias chx='chmod+x'								#make file executable
+alias x='exit'									#exit terminal
+alias df='df -h'								# human-readable sizes
+alias free='free -m'								# show sizes in MB
+
+#MAINTENANCE
+alias maintain='sudo apt update && sudo apt upgrade; sudo apt autoremove; sudo apt autoclean; sudo apt clean'
+alias updg='sudo apt update && sudo apt upgrade'				#update and upgrade the system
+alias update='sudo apt update'							#update the system
+alias upgrade='sudo apt upgrade'						#upgrade the system
+alias install='sudo apt install'						#install an app
+alias rmv=''									#TBA removes and purges a packet
+alias bye='shutdown now'							#shut the system down
+alias blame='sudo systemd-analyze blame'					#check proccesses that take most time during boot
+alias installfrom='xargs sudo apt-get install <'				#install packages listed in a file
+
+# ERROR MESSAGES FROM JOURNALCTL
+alias error="journalctl -p 3 -xb"						#list journalctl errors
+
+#ARCH LINUX COMMANDS
+alias archmaintain='sudo pacman -SC && sudo systemctl --failed && sudo journalctl -p 3 -b && sudo pacman -Rns $(pacman -Qtdq)'	#TBA. remove cache, clean system, clen orphan packages
+alias archupdate='sudo pacman -Syu'						#update only standard pkgs
+alias archupdatey='sudo pacman -Syyu'						#refresh pkglist & update standard pkgs
+alias archinstall='sudo pacman -S'						#installs apps
+alias archorphan='sudo pacman -Rns $(pacman -Qtdq)'				#clean all orphan packages
+
+#CONFIRM BEFORE YOU OVERWRITE SOMETHING
+alias cp='cp -i'								#confirm copy
+alias mv='mv -i'								#confirm move
+alias rm='rm -i'								#confirm remove
+
+#ADDITIONAL
+alias rr='curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/master/roll.sh | bash'	#rickroll
+alias forecast='curl wttr.in'							#show weather
+alias moon='curl wttr.in/moon'							#show moon phase
+
+#GITHUB COMMANDS
+alias g='git'
+alias gc='git clone'
+alias ga='git add ."
+alias gac='git add . && git commit'
+alias gs='git status'
+alias gps='git push --all'
+alias gd='git diff'
+alias gl='git log' 
+alias gco='git checkout'
+alias gb=git branch'
+alias gpl='git pull --all'
+alias gpo='git pull origin
+alias gf='git fetch'
+alias gstat='git status'
+
+#DOCKER COMMANDS
+alias docker='sudo docker'
+alias di='sudo docker images'
+alias dp='sudo docker ps'
+alias dpa='sudo docker ps -a'
+
+#PROGRAMMING SHORTCUTS
+alias vs='code'									#launch vscode
+alias sub='sublime'								#launch sublime
+alias py3srv='python3 -m http.server'						#sets up a server for python3. Add a port ex. py3srv 8080
+
+#=========================
+
+### ARCHIVE EXTRACTION - cloned from DT's gitlab. 
+# https://gitlab.com/dwt1/dotfiles/-/blob/master/.bashrc
+# usage: ex <file>
+
+ex ()
+{
+  if [ -f "$1" ] ; then
+    case $1 in
+      *.tar.bz2)   tar xjf $1   ;;
+      *.tar.gz)    tar xzf $1   ;;
+      *.bz2)       bunzip2 $1   ;;
+      *.rar)       unrar x $1   ;;
+      *.gz)        gunzip $1    ;;
+      *.tar)       tar xf $1    ;;
+      *.tbz2)      tar xjf $1   ;;
+      *.tgz)       tar xzf $1   ;;
+      *.zip)       unzip $1     ;;
+      *.Z)         uncompress $1;;
+      *.7z)        7z x $1      ;;
+      *.deb)       ar x $1      ;;
+      *.tar.xz)    tar xf $1    ;;
+      *.tar.zst)   unzstd $1    ;;
+      *)           echo "'$1' cannot be extracted via ex()" ;;
+    esac
+  else
+    echo "'$1' is not a valid file"
+  fi
+}
