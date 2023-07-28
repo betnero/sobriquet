@@ -1,7 +1,7 @@
 # sobriquet
 
 
-##PROJECT DESCRIPTION
+## PROJECT DESCRIPTION
 
 The project is a collection of linux terminal aliases. Aliases are basically abbrviations of commands used in the linux terminal. They reduce the amount of writing and make work much faster. Alias can be placed in the .bashrc file in the home directory.
 
@@ -10,7 +10,7 @@ alias SHORT_COMMAND='ORIGINAL_COMMAND'
 
 - Example: alias ls='ls -lah'
 
-##HOW TO INSTALL
+## HOW TO INSTALL
 
 1. git clone https://github.com/betnero/sobriquet
 2. Copy the contents of the aliases.txt file.
@@ -21,6 +21,6 @@ source ~/.bashrc
 OR
 . ~/.bashrc
 
-##HOW TO CONTRIBUTE
+## HOW TO CONTRIBUTE
 
-CONTRIBUTING.md
+Check: CONTRIBUTING.md

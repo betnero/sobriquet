@@ -1,17 +1,33 @@
 #DIRECTORY NAVIGATION
 alias ..='cd ..;pwd'								#go up one directory levels and print directory name
-alias ...='cd ../..;pwd'							#go up two directory levels and print directory name
-alias ....='cd ../../..;pwd'							#go up three directory levels and print directory name
-alias cdh='cd ~'								#go to home directory
-alias cdr='cd /'								#go to root directory
+alias ...='cd ../..;pwd'						#go up two directory levels and print directory name
+alias ....='cd ../../..;pwd'				#go up three directory levels and print directory name
+alias cdh='cd ~'								    #go to home directory
+alias cdr='cd /'								    #go to root directory
 
 #TERMINAL OPERATIONS
-alias c='clear'									#clear terminal
+alias c='clear'									    #clear terminal
+alias h='history'                   #show history
 alias chist='cat /dev/null > ~/.bash_history && history -c'			#clear all terminal history
-alias chx='chmod+x'								#make file executable
-alias x='exit'									#exit terminal
-alias df='df -h'								# human-readable sizes
-alias free='free -m'								# show sizes in MB
+alias chx='chmod+x'								  #make file executable
+alias x='exit'									    #exit terminal
+alias df='df -h'								    #human-readable sizes
+alias free='free -m'								#show sizes in MB
+alias myip='curl ifconfig.me'       #show my ip
+
+#CALENDAR
+alias jan='cal -m 01'
+alias feb='cal -m 02'
+alias mar='cal -m 03'
+alias apr='cal -m 04'
+alias may='cal -m 05'
+alias jun='cal -m 06'
+alias jul='cal -m 07'
+alias aug='cal -m 08'
+alias sep='cal -m 09'
+alias oct='cal -m 10'
+alias nov='cal -m 11'
+alias dec='cal -m 12'
 
 #MAINTENANCE
 alias maintain='sudo apt update && sudo apt upgrade; sudo apt autoremove; sudo apt autoclean; sudo apt clean'
