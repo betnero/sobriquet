@@ -4,6 +4,7 @@ alias ...='cd ../..;pwd'						#go up two directory levels and print directory na
 alias ....='cd ../../..;pwd'				#go up three directory levels and print directory name
 alias cdh='cd ~'								    #go to home directory
 alias cdr='cd /'								    #go to root directory
+alias ping='ping -c 5'              #limit the number of pings
 
 #TERMINAL OPERATIONS
 alias c='clear'									    #clear terminal
@@ -31,12 +32,14 @@ alias dec='cal -m 12'
 
 #MAINTENANCE
 alias maintain='sudo apt update && sudo apt upgrade; sudo apt autoremove; sudo apt autoclean; sudo apt clean'
-alias updg='sudo apt update && sudo apt upgrade'				#update and upgrade the system
-alias update='sudo apt update'							#update the system
-alias upgrade='sudo apt upgrade'						#upgrade the system
+alias updg='sudo apt update && sudo apt upgrade && echo "System updated & upgraded!"'				#update and upgrade the system
+alias update='sudo apt update && echo "System updated!"'							#update the system
+alias upgrade='sudo apt upgrade && echo "System upgraded!"'						#upgrade the system
 alias install='sudo apt install'						#install an app
+alias rmv='sudo apt remove'                 #remove a package
+alias purge='sudo apt purge'                #reove and purge a package
 alias rmv=''									#TBA removes and purges a packet
-alias bye='shutdown now'							#shut the system down
+alias bye='shutdown now  && echo "SYSTEM SHUTTING DOWN!...!"'							#shut the system down
 alias blame='sudo systemd-analyze blame'					#check proccesses that take most time during boot
 alias installfrom='xargs sudo apt-get install <'				#install packages listed in a file
 
