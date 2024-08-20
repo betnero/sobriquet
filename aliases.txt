@@ -24,6 +24,8 @@ alias weather='curl wttr.in'                        #check weather
 alias now='date "+%Y-%m-%d %H:%M:%S"'  #current date and time
 alias ping='ping -c 5'              #limit the number of pings
 alias pingg='ping -c 5 google.com'  #ping Google
+alias ports='netstat -tulanp'       #list all open ports
+alias speedtest='speedtest-cli'    #test internet speed
 
 #CALENDAR
 alias jan='cal -m 01'
