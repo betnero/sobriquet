@@ -6,6 +6,7 @@ alias cdh='cd ~'								    #go to home directory
 alias cdr='cd /'								    #go to root directory
 alias ping='ping -c 5'              #limit the number of pings
 alias s='sudo'                      #short for sudo
+alias ls='ls -la --color=auto'      #color in `ls`
 
 #TERMINAL OPERATIONS
 alias c='clear'									    #clear terminal
@@ -17,6 +18,9 @@ alias df='df -h'								    #human-readable sizes
 alias free='free -m'								#show sizes in MB
 alias myip='curl ifconfig.me'       #show my ip
 alias hgrep='history | grep'        #grep history
+alias duh='du -h'                   #disk usage 
+alias cleanup='rm -rf ~/Downloads/*' #clear the Downloads directory
+alias weather='curl wttr.in'                        #check weather 
 
 #CALENDAR
 alias jan='cal -m 01'
@@ -37,6 +41,7 @@ alias maintain='sudo apt update && sudo apt upgrade; sudo apt autoremove; sudo a
 alias updg='sudo apt update && sudo apt upgrade && echo "System updated & upgraded!"'				#update and upgrade the system
 alias update='sudo apt update && echo "System updated!"'							#update the system
 alias upgrade='sudo apt upgrade && echo "System upgraded!"'						#upgrade the system
+alias search='sudo apt search'   #search for a package
 alias install='sudo apt install'						#install an app
 alias rmv='sudo apt remove'                 #remove a package
 alias purge='sudo apt purge'                #reove and purge a package
@@ -91,6 +96,7 @@ alias dpa='sudo docker ps -a'
 alias vs='code'									#launch vscode
 alias sub='sublime'								#launch sublime
 alias py3srv='python3 -m http.server'						#sets up a server for python3. Add a port ex. py3srv 8080
+alias pyenv='python -m venv env && source env/bin/activate' #create a Python env & activate it 
 
 #=========================
 
