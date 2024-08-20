@@ -17,11 +17,13 @@ alias df='df -h'								    #human-readable sizes
 alias free='free -m'								#show sizes in MB
 alias myip='curl ifconfig.me'       #show my ip
 alias hgrep='history | grep'        #grep history
+alias grep='grep --color=auto'      #color matched text findings in grep
 alias duh='du -h'                   #disk usage 
 alias cleanup='rm -rf ~/Downloads/*' #clear the Downloads directory
 alias weather='curl wttr.in'                        #check weather 
 alias now='date "+%Y-%m-%d %H:%M:%S"'  #current date and time
 alias ping='ping -c 5'              #limit the number of pings
+alias pingg='ping -c 5 google.com'  #ping Google
 
 #CALENDAR
 alias jan='cal -m 01'
