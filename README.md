@@ -27,7 +27,7 @@ OR
 2. git clone https://github.com/betnero/sobriquet
 3. cd ~
 4. sudo nano .zsh_aliases
-5. Enter the aliases of your choice (e.g. alaia bye='sudo shutdown now') and save the changes
+5. Enter the aliases of your choice (e.g. alias bye='sudo shutdown now') and save the changes
 6. sudo nano .zshrc
 7. Enter the following code at the end of the file:
 
