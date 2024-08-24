@@ -32,7 +32,9 @@ OR
 7. Enter the following code at the end of the file:
 
 if [ -f ~/.zsh_aliases ]; then
+
  . ~/.zsh_aliases 
+
 fi
 
 9. Save the changes and close the file.
