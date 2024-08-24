@@ -10,7 +10,7 @@ alias SHORT_COMMAND='ORIGINAL_COMMAND'
 
 - Example: alias ls='ls -lah'
 
-## HOW TO INSTALL
+## HOW TO INSTALL ON BASH
 
 1. git clone https://github.com/betnero/sobriquet
 2. Copy the contents of the aliases.txt file.
@@ -20,6 +20,26 @@ alias SHORT_COMMAND='ORIGINAL_COMMAND'
 source ~/.bashrc 
 OR
 . ~/.bashrc
+
+## HOW TO INSTALL ON ZSH (KALI LINUX)
+
+1. Kali Linux on release 2020.4 and later uses zsh as the default shell. Steps to apply the aliases in such case are listed below.
+2. git clone https://github.com/betnero/sobriquet
+3. cd ~
+4. sudo nano .zsh_aliases
+5. Enter the aliases of your choice (e.g. alaia bye='sudo shutdown now') and save the changes
+6. sudo nano .zshrc
+7. Enter the following code at the end of the file:
+
+if [ -f ~/.zsh_aliases ]; then
+ . ~/.zsh_aliases 
+fi
+
+9. Save the changes and close the file.
+10. To apply changes enter:
+source ~/.zshrc
+OR
+    /.zshrc
 
 ## HOW TO CONTRIBUTE
 
