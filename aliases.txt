@@ -16,16 +16,20 @@ alias x='exit'									    #exit terminal
 alias df='df -h'								    #human-readable sizes
 alias free='free -m'								#show sizes in MB
 alias myip='curl ifconfig.me'       #show my ip
+alias ipinfo='curl ipinfo.io'
+alias ipfull='curl -s ipinfo.io/ip'
 alias hgrep='history | grep'        #grep history
 alias grep='grep --color=auto'      #color matched text findings in grep
 alias duh='du -h'                   #disk usage 
 alias cleanup='rm -rf ~/Downloads/*' #clear the Downloads directory
 alias weather='curl wttr.in'                        #check weather 
 alias now='date "+%Y-%m-%d %H:%M:%S"'  #current date and time
-alias ping='ping -c 5'              #limit the number of pings
+alias ping5='ping -c 5'              #limit the number of pings
+alias ping3='ping -c 3'              #limit the number of pings
 alias pingg='ping -c 5 google.com'  #ping Google
 alias ports='netstat -tulanp'       #list all open ports
 alias speedtest='speedtest-cli'    #test internet speed
+alias which-command='whence'
 
 #CALENDAR
 alias jan='cal -m 01'
@@ -91,6 +95,9 @@ alias gpo='git pull origin
 alias gf='git fetch'
 alias gstat='git status'
 
+#CRYPTO COMMANDS
+sshkey='ssh-keygen -t rsa -b 4096 -c'
+
 #DOCKER COMMANDS
 alias docker='sudo docker'
 alias di='sudo docker images'
@@ -102,6 +109,7 @@ alias vs='code'									#launch vscode
 alias sub='sublime'								#launch sublime
 alias py3srv='python3 -m http.server'						#sets up a server for python3. Add a port ex. py3srv 8080
 alias pyenv='python -m venv env && source env/bin/activate' #create a Python env & activate it 
+alias py3='python3'
 
 #=========================
 
