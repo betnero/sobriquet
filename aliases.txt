@@ -122,7 +122,7 @@ alias torbrowser='torbrowser-launcher'
 
 #=========================
 
-#MACCHANGER ALIASES
+#MACCHANGER ALIASES [prerequsite: macchanger installed]
 
 alias macs='sudo macchanger -s'
 alias macl='sudo macchanger -l'
