@@ -98,6 +98,8 @@ alias gstat='git status'
 #CRYPTO COMMANDS
 sshkey='ssh-keygen -t rsa -b 4096 -c'
 
+#=========================
+
 #DOCKER COMMANDS
 alias docker='sudo docker'
 alias di='sudo docker images'
@@ -129,6 +131,7 @@ alias macl='sudo macchanger -l'
 alias macr='sudo macchanger -r'
 alias macm='sudo macchanger -m'
 alias macA='sudo macchanger -A'
+alias maca='sudo macchanger -a'
 alias macreset='sudo macchanger -p'
 
 #=========================
