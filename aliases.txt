@@ -104,18 +104,32 @@ alias di='sudo docker images'
 alias dp='sudo docker ps'
 alias dpa='sudo docker ps -a'
 
+#=========================
+
 #PROGRAMMING SHORTCUTS
 alias vs='code'									#launch vscode
 alias sub='sublime'								#launch sublime
 alias py3srv='python3 -m http.server'						#sets up a server for python3. Add a port ex. py3srv 8080
 alias pyenv='python -m venv env && source env/bin/activate' #create a Python env & activate it 
 alias py3='python3'
+
 #=========================
 
 #TOR ALIASES
 
 alias tor='sudo service tor start && sudo service tor status'
 alias torbrowser='torbrowser-launcher'
+
+#=========================
+
+#MACCHANGER ALIASES
+
+alias macs='sudo macchanger -s'
+alias macl='sudo macchanger -l'
+alias macr='sudo macchanger -r'
+alias macm='sudo macchanger -m'
+alias macA='sudo macchanger -A'
+alias macreset='sudo macchanger -p'
 
 #=========================
 
